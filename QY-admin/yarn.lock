@@ -59,6 +59,11 @@
     global "~4.4.0"
     is-function "^1.0.1"
 
+"@xmldom/xmldom@^0.8.2":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.8.3.tgz#beaf980612532aa9a3004aff7e428943aeaa0711"
+  integrity sha512-Lv2vySXypg4nfa51LY1nU8yDAGo/5YwF+EY/rUZgIbfvwVARcd67ttCM8SMsTeJy51YhHYavEq+FS6R0hW9PFQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -438,6 +443,13 @@ axios@^0.18.0:
   dependencies:
     follow-redirects "^1.3.0"
     is-buffer "^1.1.5"
+
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
 
 babel-code-frame@^6.26.0:
   version "6.26.0"
@@ -1816,12 +1828,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cos-js-sdk-v5@0.5.16:
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/cos-js-sdk-v5/-/cos-js-sdk-v5-0.5.16.tgz#93197b7e1a5f45bb2e6809ccdc10eac75b547b6f"
-  integrity sha512-XVrdylWPJCC32c8Z3Vw6Cgc9Yr0NPtE7jByZ5JvAerYJ/5yATg6O7u5KnpF0kZn/cD1HRyQTDiXDZORPN+Vu3A==
+cos-js-sdk-v5@^1.3.7:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/cos-js-sdk-v5/-/cos-js-sdk-v5-1.4.6.tgz#807b9eb4d8228ec1b6624f5bf71eb1e833930102"
+  integrity sha512-FTUXjBqtADiNk3O5pwiaiDLQRiD2bt5ZQnP+34rfBszG6DqH6oa7FNpQeI7lnTiCvsfIyE/EcsuCBt7VVQpioQ==
   dependencies:
-    xmldom "^0.1.27"
+    "@xmldom/xmldom" "^0.8.2"
 
 cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
   version "2.2.2"
@@ -2535,10 +2547,10 @@ eventemitter3@^2.0.3:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
   integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
 
-eventemitter3@^4.0.0:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.4.tgz#b5463ace635a083d018bdc7c917b4c5f10a85384"
-  integrity sha512-rlaVLnVxtxvoyLsQQFBx53YmXHDxRIzzTLbdfxqi4yocpSjAxXwkU0cScM5JgSKMqEhrZpnvQ2D9gjylR0AimQ==
+eventemitter3@^4.0.0, eventemitter3@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^1.0.0:
   version "1.1.1"
@@ -2898,6 +2910,11 @@ follow-redirects@^1.0.0, follow-redirects@^1.3.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.7.tgz#a39e4804dacb90202bca76a9e2ac10433ca6a69a"
   dependencies:
     debug "^3.1.0"
+
+follow-redirects@^1.14.0:
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
+  integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
 font-awesome@^4.7.0:
   version "4.7.0"
@@ -5183,7 +5200,7 @@ once@~1.3.0:
 
 onetime@^1.0.0:
   version "1.1.0"
-  resolved "http://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
+  resolved "https://registry.npmjs.org/onetime/-/onetime-1.1.0.tgz#a1f7838f8314c516f05ecefcbc4ccfe04b4ed789"
 
 onetime@^2.0.0:
   version "2.0.1"
@@ -7649,13 +7666,14 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vod-js-sdk-v6@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.yarnpkg.com/vod-js-sdk-v6/-/vod-js-sdk-v6-1.4.8.tgz#fcce734bbab42ff51089449efd68dae676bb5cf9"
-  integrity sha512-BcUH8traFP8EcUUUP1usooAW5xSjvt3PhyD7GI4NlMsz6INlsXVbPnQpot9UPRFFRh2LPsNtPBrTaQNz7V3xJg==
+vod-js-sdk-v6@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/vod-js-sdk-v6/-/vod-js-sdk-v6-1.5.0.tgz#c3e9bbcdfb69f0f7d3a316c4176ba89b46b11c67"
+  integrity sha512-WkMtV9MDxO//6SDQgw+QsbO3dskJwE8nmch2Wn3e4Oub5/eav6DMedFAHRjar+tt9WDLveO0YLxa3yVBQ2DHbQ==
   dependencies:
-    axios "^0.18.0"
-    cos-js-sdk-v5 "0.5.16"
+    axios "^0.21.1"
+    cos-js-sdk-v5 "^1.3.7"
+    eventemitter3 "^4.0.7"
     js-sha1 "^0.6.0"
     uuid "^3.3.2"
 
